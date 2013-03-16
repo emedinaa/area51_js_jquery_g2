@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Fundamentos de Javascript </title>
+	<link rel="stylesheet" type="text/css" href="assets/css/ejemplo1.css">
+</head>
+<body>
+	<button onclick="pintar()"> click</button>
+	<p id="p1" > Escribir </p>
+	<div id="mydiv"> </div>
+	<div id="mydiv2"> </div>
+
+	<!-- script -->
+	<script type="text/javascript">
+		console.log("my script");
+
+		function pintar()
+		{
+			//comentario de 1 linea
+			//alert("click"); 
+
+			//comentarios varias lineas
+			/*alert("click");
+			alert("click");
+			alert("click");*/
+
+			//acceder a los elementos del DOM
+			var p=document.getElementById("p1");
+			var mydiv=document.getElementById("mydiv");
+			var mydiv2=document.getElementById("mydiv2");
+			console.log("p ", p);
+			//escribir html
+			p.innerHTML="Nuevo Texto";
+
+			//escribir codigo html
+			mydiv.innerHTML="<h2>Texto</h2><p>Parrafo </p>";
+			//modificar el css
+			//mydiv2.css.color="#ff00ff";
+			console.log("mydiv2 ",mydiv2,mydiv2.style);
+			//mydiv2.style.background="#ff00ff";
+			mydiv2.style.backgroundColor="#ff00ff";
+			//mydiv2.css("background-color","#ff00ff");
+		}
+	</script>
+</body>
+</html>

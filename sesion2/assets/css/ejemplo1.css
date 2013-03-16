@@ -1,0 +1,22 @@
+body
+{
+	background-color: #d4d4d4;
+}
+#mydiv
+{
+	width: 200px;
+	height: 100px;
+	background-color: orange;
+	margin-left: 10px;
+	margin-top: 5px;
+	float: left;
+}
+#mydiv2
+{
+	width: 200px;
+	height: 100px;
+	background-color: blue;
+	margin-left: 10px;
+	margin-top: 5px;
+	float: left;
+}

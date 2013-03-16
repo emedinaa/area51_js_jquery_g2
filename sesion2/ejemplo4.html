@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Calculadora</title>
+</head>
+<body>
+		<b>Operador A :</b><input id="op1" type="text"></input><button onclick="operacion()">[+]</button><br/>
+		<b>Operador B : </b><input id="op2" type="text"><br/>
+		<b id="suma">Resulado : </b>
+		<script type="text/javascript">
+				//isNan();
+			var op1=document.getElementById("op1");
+			var op2=document.getElementById("op2");
+			var suma=document.getElementById("suma");
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			function operacion()
+			{
+				//console.log("p1 ",p1);
+
+				if(op1.value=="")
+				{
+					//alert("p1 "+op1.value);
+					alert("escribe un valor 1");
+					//op1.style.
+				}else
+				{
+					if(op2.value=="")
+					{
+						alert("escribe un valor 2");
+							
+					}else
+					{
+						//aqui..............
+						var p1=parseInt(op1.value);
+						var p2=parseInt(op2.value);
+						console.log("p1 y p2 ",p1," ",p2," suma ",p1+p2);
+					}
+				}
+
+				
+
+				
+				//return;
+				//-----------------------------
+				//capturar valores
+				/*var p1=parseInt(op1.value);
+				var p2=parseInt(op2.value);
+				console.log("p1 y p2 ",p1," ",p2," suma ",p1+p2);
+
+				//mortrar resultado
+				suma.innerHTML="Resultado = "+mySuma(p1,p2);*/
+			}
+
+			function mySuma(p1,p2)
+			{
+				return p1+p2;
+			}
+		</script>
+</body>
+</html> 

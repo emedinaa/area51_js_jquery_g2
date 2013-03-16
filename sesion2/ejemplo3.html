@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Condicionales </title>
+	<link rel="stylesheet" type="text/css" href="assets/css/ejemplo1.css">
+</head>
+<body>
+	<img id="img" src="assets/images/pic_bulboff.gif" width="100" height="180">
+	<button id="btn" onclick="change()">click</button>
+	<script type="text/javascript">
+		var img=document.getElementById('img');
+		//img.src="";
+		var bandera=0;//apagado
+		function change()
+		{
+			if(bandera==0)
+			{
+				img.src="assets/images/pic_bulbon.gif";
+				document.getElementById("btn").innerHTML="OFF";
+				//cambio
+				bandera=1;
+			}else
+			{
+				img.src="assets/images/pic_bulboff.gif";
+				document.getElementById("btn").innerHTML="ON";
+				bandera=0;
+			}
+			//parseInt();
+			
+
+		}
+	</script>
+</body>
+</html>

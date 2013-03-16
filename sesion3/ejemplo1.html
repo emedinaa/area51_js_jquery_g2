@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Condicionales</title>
+	<!-- importar los estilos -->
+	<link rel="stylesheet" type="text/css" href="assets/css/ejemplo1.css">
+</head>
+<body>
+		<div id="container">
+				<p>Ingresa tu edad </p><input id="txtEdad" type="text" ></input>
+				<button onclick="validarEdad()">Validar</button>
+				<div id="output">
+					
+				</div>
+		</div>
+		<script type="text/javascript">
+
+			var version =1.0;
+
+			function init()
+			{
+				console.log("ready "+version);
+				//definir parametros
+				//definir eventos
+
+				//IF -------------------
+				/*if(condicion)
+				{
+					//se ejecuta
+				}else if(condicion)
+				{
+					//se ejecuta 
+				}else
+				{
+
+				}*/
+				//se ejecuta 
+			}
+			function validarEdad()
+			{
+				//capturar el valor ingresado
+				var input=document.getElementById("txtEdad");
+				var output=document.getElementById("output");
+				var edad=parseInt(input.value);
+				var resultado ="";
+
+				if(edad<18)
+				{
+					resultado="No tienes acceso :(";
+				}else
+				{
+					resultado="Bienvenido :)";
+				}
+
+				//alert("resultado "+resultado);
+				//input.style.color="";
+				output.innerHTML="<h2>"+resultado+"</h2>";
+			}
+
+			init();
+		</script>
+</body>
+</html>
