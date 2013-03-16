@@ -2,18 +2,52 @@ body
 {
 	background-color: #d4d4d4;
 }
-h2
-{
-	color: red;
-}
+
 #h2a
 {
-	color: black;
+	color: red;
 }
 
 #h2b
 {
-	color: red;
+	color: black;
+}
+#h2c
+{
+	color: orange;
+}
+#container
+{
+	width: 500px;
+}#container2
+{
+	width: 700px;
+	width: 500px;
+}
+.mydiv
+{
+	width: 100px;
+	height: 100px;
+	float: left;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	background-color: orange;
+}
+
+.mydiv2
+{
+	width: 100px;
+	height: 100px;
+	float: left;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	background-color: white;
 }
 
 

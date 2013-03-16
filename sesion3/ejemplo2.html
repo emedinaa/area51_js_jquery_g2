@@ -1,0 +1,62 @@
+<!DOCTYPE hml>
+<html>
+<head>
+	<title>Estructuras de control</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/ejemplo1.css">
+</head>
+<body>
+	<div id="output"> 
+	</div>
+	<script type="text/javascript">
+		function init()
+		{
+			console.log("ready");
+			var day= new Date().getDay();
+			// D L M M J V S  
+			// 0 1 2 3 4 5 6
+			console.log("day ",day);
+			var resultado="";
+			switch(day)
+			{
+				case 0:
+						output="Domingo :) ,viendo Netflix "
+					break;
+				case 1:
+						output="Lunes Aburrido"
+					break;
+				case 2:
+						output ="Marte voy hacer mi tarea";
+					break;
+				case 3:
+						output ="Miercoles presente mi tarea :)";
+					break;
+				case 4:
+						output ="Jueves ya se acab la semana";
+					break;
+				case 5:
+						output ="Viernes por fin! toy hueliz :)";
+					break;
+
+
+			}
+			document.getElementById("output").innerHTML="<h2>"+output+"</h2>";
+			/*
+				switch(valor a comparar)
+				{
+					case valor1 :
+							se ejecuta la acciòn
+						break;	
+					case valor2 :
+							se ejecuta la acciòn
+						break;
+					default :
+							se ejecuta la acciòn x defecto
+				}
+			*/
+	
+		}
+
+		init();
+	</script>
+</body>
+</html>

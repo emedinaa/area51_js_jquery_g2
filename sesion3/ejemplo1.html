@@ -47,14 +47,20 @@
 				if(edad<18)
 				{
 					resultado="No tienes acceso :(";
-				}else
+					output.innerHTML="<h2 id='h2a'>"+resultado+"</h2>";
+				}else if(edad >=18 && edad <=50) // ||
 				{
 					resultado="Bienvenido :)";
+					output.innerHTML="<h2 id='h2b'>"+resultado+"</h2>";
+				}else
+				{
+					resultado="Tas muy  viejo :(";
+					output.innerHTML="<h2 id='h2c'>"+resultado+"</h2>";
 				}
 
 				//alert("resultado "+resultado);
 				//input.style.color="";
-				output.innerHTML="<h2>"+resultado+"</h2>";
+				//output.innerHTML="<h2>"+resultado+"</h2>";
 			}
 
 			init();
