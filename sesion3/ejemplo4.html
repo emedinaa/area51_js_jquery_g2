@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bucles</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/ejemplo1.css">
+
+</head>
+<body>
+		<p>DINAMICO </p>
+		<div id="container2">
+		</div>
+
+		<div id="container">
+				<div class="mydiv"><p>BOX </p></div>		
+				<div class="mydiv"><p>BOX </p></div>		
+				<div class="mydiv"><p>BOX </p></div>		
+				<div class="mydiv"><p>BOX </p></div>		
+				<div class="mydiv"><p>BOX </p></div>		
+				<div class="mydiv"><p>BOX </p></div>		
+				<div class="mydiv"><p>BOX </p></div>		
+				
+		</div>
+
+		<script type="text/javascript">
+			//Bucles
+			//FOR
+			/*
+				var total=10;
+				for (var i = 0; i < total; i++)
+				 {
+					console.log("item ", i);
+
+				};
+			*/
+
+
+			function init()
+			{
+				var output=document.getElementById("container2");
+
+				var arr=["Lunes", "Martes","Miercoles", "Jueves","Viernes" ];
+				var resultado="";
+				var count =0;
+
+				while(count<arr.length)
+				{
+					//ejecutar acciòn
+					resultado +='<div class="mydiv2"><p>'+ arr[count] +'</p></div>';
+					//incrementar
+					count++;
+				}
+				/*for (var i = 0; i < arr.length; i++)
+				{
+					console.log("item ", arr[i]);
+					resultado +='<div class="mydiv2"><p>'+ arr[i] +'</p></div>';
+					//resultado +='<div class="mydiv2"><img src='+ arr[i] +'></img></div>';
+				};*/
+				output.innerHTML=resultado;
+			}
+
+			init();
+		</script>
+</body>
+</html>
