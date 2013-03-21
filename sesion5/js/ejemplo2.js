@@ -29,11 +29,14 @@ $(document).ready(function()
 
 });
 
-function click_handler()
+function click_handler(e)
 {
-	alert("click ");
+	//alert("click ");
+	console.log("click ","e "+e ,"e.target "+ e.target)
+	console.log("e.target ",$(e.target),$(e.target).attr("id"));
+	$(e.target).css("background-color","blue");
 }
-function dblclick_handler()
+function dblclick_handler(e)
 {
 	alert("doble click ");
 }
