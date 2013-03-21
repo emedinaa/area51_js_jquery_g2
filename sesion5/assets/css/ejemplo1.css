@@ -1,0 +1,35 @@
+body
+{
+	background-color: #d4d4d4;
+}
+.mycontainer
+{
+	width:600px;
+	height: 200px;
+	background-color: white;
+	margin-bottom: 5px;
+	margin-left: 100px;
+}
+.mydiv
+{
+	width:100px;
+	height:100px;
+	background-color: orange;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	margin-top: 5px;
+	text-align: center;
+	float: left;
+}
+
+.mydiv2
+{
+	width:100px;
+	height:100px;
+	background-color: #ff00ff;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	margin-top: 5px;
+	text-align: center;
+	float: left;
+}
